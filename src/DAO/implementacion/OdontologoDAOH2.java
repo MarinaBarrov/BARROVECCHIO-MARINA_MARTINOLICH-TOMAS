@@ -44,7 +44,7 @@ public class OdontologoDAOH2 implements IDao<Odontologo> {
 
     @Override
     public List<Odontologo> listarTodos() {
-
+        LOGGER.info("Estamos listando todos los odontologos");
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         List<Odontologo> odontologos = new ArrayList<>();
